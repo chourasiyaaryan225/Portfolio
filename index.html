@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    #formcontainer{
+        height: 350px;
+        width: 300px;
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+        border-radius: 10px;
+        margin: 120px 200px;
+    }
+    label{
+        margin: 4px 25px;
+        font-size: 22px;
+       }
+    input{
+        padding: 6px 19px;
+        font-size: 16px;
+        margin: 6px 20px ;
+        border-radius: 8px;
+    }
+    input:hover{
+        border-color: blueviolet;
+    }
+
+    h1{
+        padding-top:10px;
+        margin-left: 90px;
+        color: blueviolet;
+    }
+    a{
+        text-decoration: none;
+        margin: 0px 30px;
+        color: blueviolet;
+    }
+    p{
+        margin: 8px 25px;
+        font-weight: bold;
+        font-size: 17px;
+    }
+    p a{
+        margin:0px;
+        
+    }
+    button{
+        font-size: 13px;
+        padding: 6px 50px;
+        margin: 14px 40px;
+        border: 1px solid blueviolet;
+        border-radius: 20px;
+        background-color: blueviolet;
+    }
+    button:hover{
+        opacity: 0.9;
+        cursor: pointer;
+    }
+    button a{
+        font-size: 16px;
+        font-weight: bold;
+        color: white;
+    }
+    #overlay{
+        position: absolute;
+        top: 0px;
+        right: 0px;
+        height: 600px;
+        width: 600px;
+        background-color: blueviolet;
+        color: white;
+        z-index: 1;
+        border-radius: 100% 0% 0% 100%;
+        animation-name: border;
+        animation-duration: 2s;
+        animation-timing-function: ease-in-out;
+        animation-iteration-count: 1;
+    }
+    @keyframes border {
+        0%{
+            height: 100%;
+            width: 100%;
+            border-radius: 0px;
+        }
+        25%{
+            border-radius:42% 0% 0% 42% ;
+        }
+        50%{
+            border-radius: 63% 0% 0% 59%;
+        }
+        75%{
+            border-radius: 83% 0% 0% 82%;
+        }
+        100%{
+            border-radius: 100% 0% 0% 100%;
+        }
+    }
+    h2{
+        color: white;
+        margin: 240px 100px;
+        font-size: 80px;
+    }
+</style>
+<body>
+    <div>
+        <div id="container">
+            <div id="formcontainer">
+                <form>
+                    <h1>
+                        Sign in
+                    </h1>
+                    <label>
+                        User Name : 
+                    </label><br>
+                    <input type="text" placeholder="Enter user name"><br>
+                    <label>
+                        Password  :
+                    </label><br>
+                    <input type="password" placeholder="Enter your password"><br>
+                    <a href="#">forgot your password?</a><br>
+
+                    <button><a href="#">Login</a></button><br>
+                    <p>
+                        Don`t have an account?<a href="#">sign up</a>
+                    </p>
+                </form>
+            </div>
+        </div >
+        <div id="overlay">
+            <h2>
+                Wel Come . 
+            </h2>
+        </div>
+    </div>
+</body>
+</html>
